@@ -1,0 +1,17 @@
+Para medir los tiempos de forma justa y poder replicar las pruebas sin problemas, aislamos las
+funciones de cada algoritmo usando la librería \texttt{<chrono>} de C++, midiendo todo en
+microsegundos para no perder precisión en los tamaños más chicos.
+
+\textbf{Detalles del entorno y hardware:}
+\begin{itemize}
+\item \textbf{Sistema Operativo:} WSL 2, subsistema Ubuntu en Windows 11.
+\item \textbf{Hardware:} Procesador Intel Core i5-10400F con 24 GB de memoria RAM.
+\item \textbf{Compilación:} Todo compilado a través de \texttt{Makefile} usando \texttt{g++}
+\item \textbf{Procesamiento y gráficos:} Se programaron scripts en Python con \texttt{pandas}, \texttt{matplotlib} y \texttt{seaborn} para crear las entradas de prueba y generar las graficas.
+\end{itemize}
+
+\textbf{Casos de prueba analizados:}
+\begin{itemize}
+    \item \textbf{Ordenamiento de Arreglos):} Probamos tamaños de $N \in \{10, 10^3, 10^5, 10^7\}$ en orden ascendente, descendente y aleatorio, combinados con los dominios $D1$ y $D7$.
+    \item \textbf{Matrices:} Probamos dimensiones de $N \in \{16, 64, 256, 1024\}$ para matrices densas, dispersas y diagonales, usando valores en los dominios $D0$ y $D10$.
+\end{itemize}

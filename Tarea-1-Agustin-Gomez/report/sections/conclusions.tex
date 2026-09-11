@@ -1,0 +1,5 @@
+En conclusión, las pruebas nos demostraron que la notación teórica Big-O no cuenta toda la historia a la hora de predecir el rendimiento real. Factores físicos del hardware,
+como aprovechar bien la memoria caché o el alto costo de estar pidiendo memoria dinámica, cambian drásticamente los tiempos de ejecución.
+Esto lo vimos clarísimo cuando los algoritmos \textit{in-place} como Quick Sort y std::sort estuvieron por encima de Merge Sort, o cuando Naive
+le ganó con creces a Strassen simplemente porque este último satura al procesador creando submatrices en cada paso recursivo.
+En resumen, para desarrollar un buen software no basta con que la matemática del algoritmo sea eficiente, tenemos que programarlo pensando en que la máquina maneja sus recursos por dentro.
